@@ -8,6 +8,40 @@
     <title>Guess The Number</title>
   </head>
   <body>
+    <div class="app">
+      <div class="game-menu">
+        <span class="hamburger-1"></span>
+        <span class="hamburger-2"></span>
+        <span class="hamburger-3"></span>
+      </div>
+      <div class="game-options">
+        <button class="btn new-game" onclick="newGame()">NEW GAME</button>
+        <button class="btn easy-mode" onclick="easyMode()">EASY MODE</button>
+        <button class="btn normal-mode" onclick="normalMode()">
+          NORMAL MODE
+        </button>
+        <button class="btn HARD-mode" onclick="hardMode()">HARD MODE</button>
+      </div>
+      <div class="header">
+        <h1>The Game</h1>
+      </div>
+      <div class="correct-number-box">
+        <span class="correct-number">?</span>
+      </div>
+      <div class="player-number-box">
+        <span class="guess-range"></span>
+        <input type="number" class="player-number-input" placeholder="0-10" />
+        <button class="guess-btn">&rarr; guess &larr;</button>
+      </div>
+      <div class="current-game-data">
+        <span class="player-lives"
+          >Lives: <span class="player-lives-count">0</span></span
+        >
+        <span class="highscore"
+          >Highscore: <span class="highscore-count">0</span></span
+        >
+      </div>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
