@@ -86,6 +86,8 @@ function updateHighscore() {
         localStorage.setItem("highscore", highscoreValue);
       }
       break;
+    default:
+      return;
   }
 }
 console.log(localStorage);
