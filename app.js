@@ -101,6 +101,8 @@ function generateNewTargetNumber() {
     case "hard":
       targetNumber = Math.floor(Math.random() * 20 + 1);
       break;
+    default:
+      return;
   }
 }
 function loseLife() {
